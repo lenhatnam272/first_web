@@ -12,25 +12,21 @@
 </head>
 <body>
     <div class="container">
-        <div class="login">
-            <div class="login-header">
-                <p>Đăng nhập</p>
+        <form class="login-form" action="#" method="get">
+            <div class="header">
+                <h1 class="login__header1">Đăng nhập</h1>
+                <span class="login__header2">Bạn chưa có tài khoản? <a class="signup" href="#">Đăng ký</a></span>
             </div>
-            <div class="login-form">
-                <div class="username">
-                    <p class="username__text">Tài khoản:</p>
-                    <input class="username__input" type="text" placeholder="Nhập tên tài khoản">
-                </div>
-                <div class="password">
-                    <p class="password__text">Mật khẩu:</p>
-                    <input class="password__input" type="password" placeholder="Nhập mập khẩu">
-                </div>
-                <div class="btn">
-                    <button class="btn__login" type="submit">Đăng nhập</button>
-                    <button class="btn__cancel" type="submit">Hủy</button>
-                </div>
+            <div class="form">
+                <input class="form__input" type="text" placeholder="Tên đăng nhập">
             </div>
-        </div>
+            <div class="form">
+                <input class="form__input" type="password" placeholder="Mật khẩu">
+            </div>
+            <div class="form">
+                <button class="form__button" type="submit"><i class="fa-solid fa-check"></i></button>
+            </div>
+        </form>
     </div>
 </body>
 </html>
