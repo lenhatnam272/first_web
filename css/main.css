@@ -10,9 +10,11 @@ body {
   background-color: var(--white-color);
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  box-sizing: border-box;
 }
 
+* {
+  box-sizing: border-box;
+}
 /* phần chứa toàn bộ web */
 
 .container {
