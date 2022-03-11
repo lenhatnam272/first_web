@@ -277,7 +277,8 @@ body {
 
 .side-menu__item {
   border-bottom: 2px solid var(--orange-color);
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+  padding-bottom: 5px;
 }
 
 .side-menu__item a {
@@ -339,18 +340,20 @@ body {
 /* từng video */
 
 .video {
+  border-radius: 10px;
   position: relative;
   display: block;
   background-color: var(--black-color);
 }
 .video:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   transition: transform 0.3s;
   z-index: 1;
 }
 
 .video__thumbnail {
   width: 250px;
+  border-radius: 10px 10px 0 0;
 }
 
 .video__info {

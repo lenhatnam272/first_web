@@ -2,6 +2,8 @@
   --white-color: #fff;
   --black-color: #1b1b1b;
   --orange-color: #ffa31a;
+  --green-color: #32cd32;
+  --red-color: #dc143c;
 }
 
 body {
@@ -35,7 +37,7 @@ body {
 }
 
 .login-form:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   transition: transform 0.3s;
 }
 
@@ -101,4 +103,12 @@ button {
 button:hover {
   background-color: #ffc670;
   cursor: pointer;
+}
+
+.button__cancel i {
+  color: var(--red-color);
+}
+
+.button__login i {
+  color: var(--green-color);
 }
