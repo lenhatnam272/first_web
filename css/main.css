@@ -29,13 +29,12 @@ body {
   height: 120px;
   background-color: black;
   position: relative;
-  box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.header__logo a img {
+.header__logo img {
   height: 100%;
   width: auto;
 }
@@ -43,7 +42,6 @@ body {
 .header__search {
   display: flex;
   align-items: center;
-  box-sizing: border-box;
 }
 
 .header__searchbar input {
@@ -63,7 +61,7 @@ body {
   background-color: rgb(240, 240, 240);
 }
 
-.header__search-button button {
+.header__searchbar button {
   width: 60px;
   height: 30px;
   background-color: var(--orange-color);
@@ -74,10 +72,10 @@ body {
   outline: none;
   border: none;
   font-weight: bold;
-  box-sizing: unset;
+  margin-left: -10px;
 }
 
-.header__search-button button:hover {
+.header__searchbar button:hover {
   background-color: #c7821b;
   color: var(--white-color);
   cursor: pointer;
@@ -91,7 +89,6 @@ body {
   height: 50px;
   background-color: var(--orange-color);
   position: relative;
-  box-sizing: border-box;
 }
 
 .menu__list {
@@ -99,7 +96,6 @@ body {
   align-items: center;
   width: 50%;
   height: 100%;
-  box-sizing: border-box;
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -197,7 +193,6 @@ body {
   font-size: 80%;
   margin: 0 30px;
   border: 2px solid var(--orange-color);
-  box-sizing: border-box;
 }
 
 .menu-button__darkmode:hover {
@@ -217,7 +212,6 @@ body {
   color: black;
   width: fit-content;
   height: fit-content;
-  box-sizing: border-box;
   position: absolute;
   z-index: 1;
   margin-left: -20px;
@@ -255,7 +249,6 @@ body {
   height: fit-content;
   position: relative;
   display: flex;
-  box-sizing: border-box;
 }
 
 /* phần side menu */
@@ -266,7 +259,6 @@ body {
   background-color: var(--black-color);
   width: 15%;
   min-height: 100%;
-  box-sizing: border-box;
 }
 
 .side-menu__list {
@@ -298,7 +290,6 @@ body {
   background-color: var(--black-color);
   width: fit-content;
   height: fit-content;
-  box-sizing: border-box;
 }
 
 .side-menu__item:hover .side-submenu__list {
@@ -333,7 +324,6 @@ body {
   gap: 30px;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  box-sizing: border-box;
   position: relative;
 }
 
@@ -394,7 +384,6 @@ footer {
   height: 120px;
   justify-content: space-evenly;
   align-items: center;
-  box-sizing: border-box;
   color: black;
   background-color: var(--orange-color);
 }
