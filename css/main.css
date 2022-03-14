@@ -28,10 +28,11 @@ body {
   width: 100%;
   height: 120px;
   background-color: black;
-  position: relative;
+  position: fixed;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 5;
 }
 
 .header__logo img {
@@ -87,8 +88,10 @@ body {
   display: flex;
   width: 100%;
   height: 50px;
+  margin-top: 120px;
   background-color: var(--orange-color);
-  position: relative;
+  position: fixed;
+  z-index: 3;
 }
 
 .menu__list {
@@ -118,10 +121,12 @@ body {
 /* phần menu sắp xếp */
 
 .menu-order {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 40px;
+  margin-top: 170px;
   background-color: var(--black-color);
+  z-index: 2;
 }
 
 .menu-order__list {
@@ -213,7 +218,7 @@ body {
   width: fit-content;
   height: fit-content;
   position: absolute;
-  z-index: 1;
+  z-index: 4;
   margin-left: -20px;
 }
 
@@ -254,11 +259,12 @@ body {
 /* phần side menu */
 
 .side-menu {
-  position: relative;
+  position: fixed;
   float: left;
+  margin-top: 210px;
   background-color: var(--black-color);
   width: 15%;
-  min-height: 100%;
+  height: 100vh;
 }
 
 .side-menu__list {
@@ -325,6 +331,9 @@ body {
   display: grid;
   grid-template-columns: auto auto auto auto;
   position: relative;
+  margin-top: 210px;
+  transform: translateX(202px);
+  z-index: 1;
 }
 
 /* từng video */
@@ -338,7 +347,6 @@ body {
 .video:hover {
   transform: scale(1.2);
   transition: transform 0.3s;
-  z-index: 1;
 }
 
 .video__thumbnail {
@@ -382,10 +390,12 @@ footer {
   flex-direction: column;
   width: 100%;
   height: 120px;
+  padding-left: 200px;
   justify-content: space-evenly;
   align-items: center;
   color: black;
   background-color: var(--orange-color);
+  z-index: -1;
 }
 
 footer h1 {
