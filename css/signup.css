@@ -109,7 +109,14 @@ button:hover {
 .cancel-button i {
   color: var(--red-color);
 }
+.cancel-button:hover {
+  box-shadow: 0 0 15px var(--red-color);
+}
 
 .signup-button i {
   color: var(--green-color);
+}
+
+.signup-button:hover {
+  box-shadow: 0 0 15px var(--green-color);
 }
