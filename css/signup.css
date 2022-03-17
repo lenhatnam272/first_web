@@ -8,11 +8,13 @@
 
 body {
   background-color: var(--black-color);
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
 }
 
 * {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -37,8 +39,9 @@ body {
 }
 
 .signup-form:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.3s;
+  box-shadow: 0 0 20px var(--orange-color);
 }
 
 .header {
@@ -55,7 +58,6 @@ body {
 .form__input {
   width: 70%;
   height: 30px;
-  font-size: 16px;
   outline: none;
   border: none;
   border-radius: 10px;
@@ -76,8 +78,8 @@ body {
 .confirm__text {
   color: var(--white-color);
   font-weight: normal;
-  font-size: 15px;
-  padding: 2px 0 0 5px;
+  font-size: 12px;
+  padding-left: 5px;
 }
 
 .form__button {

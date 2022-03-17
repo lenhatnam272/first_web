@@ -8,11 +8,13 @@
 
 body {
   background-color: var(--black-color);
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
 }
 
 * {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -37,8 +39,9 @@ body {
 }
 
 .login-form:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: transform 0.3s;
+  box-shadow: 0 0 20px var(--orange-color);
 }
 
 .login__header1 {
@@ -70,7 +73,6 @@ body {
 }
 
 .form__input {
-  font-size: 16px;
   height: 30px;
   width: 70%;
   outline: none;
