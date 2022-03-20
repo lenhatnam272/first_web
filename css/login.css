@@ -93,9 +93,8 @@ body {
 button {
   color: black;
   border: none;
-  width: 100px;
+  width: 50%;
   height: 30px;
-  border-radius: 10px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
@@ -103,6 +102,7 @@ button {
 }
 
 .button__cancel{
+  border-radius: 10px 0 0 10px;
   background-color: var(--red-color);
 }
 
@@ -111,6 +111,7 @@ button {
 }
 
 .button__login{
+  border-radius: 0 10px 10px 0;
   background-color: var(--green-color);
 }
 
