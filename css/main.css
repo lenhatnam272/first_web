@@ -9,7 +9,7 @@
 body {
   background-color: var(--white-color);
   font-size: 16px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 * {
@@ -47,7 +47,7 @@ body {
   align-items: center;
 }
 
-.header__search:hover{
+.header__search:hover {
   transform: scale(1.2);
   transition: all 0.4s ease;
 }
@@ -189,13 +189,13 @@ body {
 }
 
 /* phần nút darkmode */
-.menu-button__darkmode{
-display: flex;
-align-items: center;
-padding: 0 30px;
+.menu-button__darkmode {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
 }
 
-.menu-button__darkmode:hover{
+.menu-button__darkmode:hover {
   transform: scale(1.2);
   transition: all 0.4s ease;
 }
@@ -215,7 +215,7 @@ padding: 0 30px;
   background-color: var(--orange-color);
 }
 
-.label__darkmode{
+.label__darkmode {
   font-size: 12px;
   font-weight: bold;
   color: black;
@@ -359,8 +359,9 @@ padding: 0 30px;
 /* từng video */
 
 .video {
+  width: fit-content;
+  height: fit-content;
   border-radius: 10px;
-  position: relative;
   display: block;
   background-color: var(--black-color);
 }
@@ -371,6 +372,7 @@ padding: 0 30px;
 }
 
 .video__thumbnail {
+  position: relative;
   width: 250px;
   border-radius: 10px 10px 0 0;
 }

@@ -9,7 +9,7 @@
 body {
   background-color: var(--black-color);
   font-size: 16px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 * {
@@ -64,7 +64,7 @@ body {
 }
 
 .signup:hover {
-  color: blue;
+  text-decoration: underline;
 }
 
 .form {
@@ -101,7 +101,7 @@ button {
   cursor: pointer;
 }
 
-.button__cancel{
+.button__cancel {
   border-radius: 10px 0 0 10px;
   background-color: var(--red-color);
 }
@@ -110,7 +110,7 @@ button {
   box-shadow: 0 0 15px var(--red-color);
 }
 
-.button__login{
+.button__login {
   border-radius: 0 10px 10px 0;
   background-color: var(--green-color);
 }
