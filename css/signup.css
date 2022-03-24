@@ -1,15 +1,16 @@
 :root {
   --white-color: #fff;
-  --black-color: #1b1b1b;
-  --orange-color: #ffa31a;
+  --black-color: #151d3b;
+  --red-color: #d82148;
+  --lightmode-color: #efefef;
+  --darkmode-color: #141e27;
   --green-color: #32cd32;
-  --red-color: #dc143c;
 }
 
 body {
-  background-color: var(--black-color);
+  background-color: var(--lightmode-color);
   font-size: 16px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 * {
@@ -28,7 +29,7 @@ body {
 
 .signup-form {
   position: relative;
-  background-color: black;
+  background-color: var(--black-color);
   border-radius: 40px;
   width: 400px;
   height: 400px;
@@ -41,13 +42,12 @@ body {
 .signup-form:hover {
   transform: scale(1.2);
   transition: all 0.4s ease;
-  box-shadow: 0 0 20px var(--orange-color);
 }
 
 .header {
   font-size: 30px;
   font-weight: bold;
-  color: var(--orange-color);
+  color: var(--white-color);
   text-align: center;
 }
 .form {
@@ -64,6 +64,7 @@ body {
   padding-left: 10px;
   font-size: 16px;
   font-weight: bold;
+  color: var(--black-color);
 }
 
 .confirm {
@@ -75,6 +76,7 @@ body {
 .confirm__check {
   width: 15px;
   height: 15px;
+  color: var(--black-color);
 }
 
 .confirm__text {
@@ -92,7 +94,7 @@ body {
 }
 
 button {
-  color: black;
+  color: var(--black-color);
   border: none;
   width: 50%;
   height: 30px;
@@ -102,7 +104,7 @@ button {
   cursor: pointer;
 }
 
-.cancel-button{
+.cancel-button {
   border-radius: 10px 0 0 10px;
   background-color: var(--red-color);
 }
@@ -111,7 +113,7 @@ button {
   box-shadow: 0 0 15px var(--red-color);
 }
 
-.signup-button{
+.signup-button {
   border-radius: 0 10px 10px 0;
   background-color: var(--green-color);
 }

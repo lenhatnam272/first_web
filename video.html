@@ -126,7 +126,16 @@
 
             <!-- phần xem video -->
             <div class="video-watch">
-                <iframe class="video-window" width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- phần video và bình luận -->
+                <div class="video-main">
+                    <iframe class="video-window" width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!-- phần bình luận  -->
+                    <form class="comment" action="#" method="get">
+                        <img class="user__avatar" src="./img/user.png" alt="">
+                        <input class="comment__input" type="text" placeholder="Nhập bình luận của bạn">
+                        <button class="comment__btn" type="submit">Bình luận</button>
+                    </form>
+                </div>
                 <!-- phần danh sách video bên phải -->
                 <div class="video-container">
                     <div class="video">

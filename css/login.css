@@ -1,13 +1,14 @@
 :root {
   --white-color: #fff;
-  --black-color: #1b1b1b;
-  --orange-color: #ffa31a;
+  --black-color: #151d3b;
+  --red-color: #d82148;
+  --lightmode-color: #efefef;
+  --darkmode-color: #141e27;
   --green-color: #32cd32;
-  --red-color: #dc143c;
 }
 
 body {
-  background-color: var(--black-color);
+  background-color: var(--lightmode-color);
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
 }
@@ -28,7 +29,7 @@ body {
 
 .login-form {
   position: relative;
-  background-color: black;
+  background-color: var(--black-color);
   width: 400px;
   height: 300px;
   border-radius: 40px;
@@ -41,13 +42,12 @@ body {
 .login-form:hover {
   transform: scale(1.2);
   transition: all 0.4s ease;
-  box-shadow: 0 0 20px var(--orange-color);
 }
 
 .login__header1 {
   font-size: 30px;
   font-weight: bold;
-  color: var(--orange-color);
+  color: var(--white-color);
   text-align: center;
   padding-bottom: 10px;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .signup {
-  color: var(--orange-color);
+  color: var(--red-color);
   text-decoration: none;
 }
 
@@ -81,6 +81,7 @@ body {
   padding-left: 10px;
   font-size: 16px;
   font-weight: bold;
+  color: var(--black-color);
 }
 
 .form-button {
@@ -91,7 +92,7 @@ body {
 }
 
 button {
-  color: black;
+  color: var(--black-color);
   border: none;
   width: 50%;
   height: 30px;
