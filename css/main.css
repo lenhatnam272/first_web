@@ -235,7 +235,6 @@ body {
 
 .submenu {
   background-color: var(--red-color);
-  color: black;
   width: fit-content;
   height: fit-content;
   position: absolute;
@@ -281,6 +280,7 @@ body {
 
 .side-menu {
   position: fixed;
+  z-index: 6;
   float: left;
   margin-top: 210px;
   background-color: var(--black-color);
@@ -313,24 +313,27 @@ body {
 /* phần submenu của sidemenu */
 
 .side-submenu {
-  position: relative;
+  position: absolute;
   background-color: var(--black-color);
-  width: fit-content;
-  height: fit-content;
+  width: max-content;
+  height: max-content;
+  margin-left: 170px;
+  margin-top: -43px;
+  border-radius: 0 10px 10px 0;
 }
 
 .side-menu__item:hover .side-submenu__list {
   display: block;
-  padding-left: 20px;
-  list-style: none;
 }
 
 .side-submenu__list {
   display: none;
+  list-style: none;
+  padding: 10px;
 }
 
 .side-submenu__item {
-  padding-top: 20px;
+  padding: 10px;
 }
 
 .side-submenu__item a {
@@ -342,7 +345,6 @@ body {
 .side-submenu__item a:hover {
   color: var(--red-color);
 }
-
 /* phần chứa các video */
 
 .video-container {
@@ -355,7 +357,7 @@ body {
   position: relative;
   margin-top: 210px;
   margin-left: 202px;
-  z-index: 1;
+  z-index: -1;
 }
 
 /* từng video */
@@ -445,22 +447,30 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     height: 200px;
     width: 100%;
   }
 
+  .submenu {
+    position: absolute;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+  }
+
   .menu__item:hover .submenu__list {
     display: flex;
-    width: 100%;
   }
 
-  .menu__item {
-    position: relative;
+  .submenu__item a {
+    background-color: var(--black-color);
   }
 
-  .submenu {
-    position: relative;
+  .submenu__item a:hover {
+    color: var(--red-color);
   }
 
   .menu-button {

@@ -235,7 +235,6 @@ body {
 
 .submenu {
   background-color: var(--red-color);
-  color: black;
   width: fit-content;
   height: fit-content;
   position: absolute;
